@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+int x,y,l;
+    printf("Enter first number:");
+    scanf("%d",&x);
+    printf("Enter second number:");
+    scanf("%d",&y);
+    if(x==0)
+    printf("LCM of the two numbers is 0");
+ if(y==0)
+    printf("LCM of the two numbers is 0");
+    else if(x>0&&y>0)
+    {
+    for(l=1;l=x*y;l++)
+    if(l%x==0&&l%y==0)
+    break;
+    printf("LCM of the two numbers is %d",l);
+    }
+    return 0;
+}
